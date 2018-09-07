@@ -1,0 +1,39 @@
+.time-circle__list {	
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.time-circle__item {
+	position: relative;
+	color: #fff;
+	
+	margin-right: 100px;
+	
+	&:last-child {
+		margin-right: 0;
+	};
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		left: -40%;
+		top: -25%;
+		border: 4px solid #fff;
+		border-radius: 50%;
+	}	
+}
+
+.time-circle__number {
+	display: block;
+	font-size: 72px;
+	line-height: 80px;
+}
+
+.time-circle__timeunit {
+	font-size: 14px;
+}

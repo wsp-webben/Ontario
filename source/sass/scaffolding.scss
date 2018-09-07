@@ -15,7 +15,7 @@
 }*/
 
 body {
-	min-width: $desktop-width;
+	/*max-width: $desktop-width;*/
 	margin: 0;
 	padding: 0;
 
@@ -26,6 +26,10 @@ body {
 	color: #000;
 
 	background-color: #fff;
+}
+
+.container {
+	margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
