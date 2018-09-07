@@ -1,0 +1,19 @@
+{
+  "name": "ontario",
+  "version": "1.0.0",
+  "description": "Demo website",
+  "main": "gulpfile.js",
+  "dependencies": {      
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "author": "webben",
+  "license": "ISC"
+}
