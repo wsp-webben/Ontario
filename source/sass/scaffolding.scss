@@ -15,15 +15,14 @@
 }*/
 
 body {
-	min-width: 320px;
+	min-width: $desktop-width;
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	font-style: normal;
-	text-transform: uppercase;
+	font-family: "Raleway", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	font-style: thin;
 	color: #000;
 
 	background-color: #fff;
