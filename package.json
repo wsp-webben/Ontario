@@ -1,5 +1,6 @@
 {
-  "name": "ontario", "version": "1.0.0",
+  "name": "ontario",
+  "version": "1.0.0",
   "description": "Web-site for htmlacademy",
   "main": "gulpfile.js",
   "dependencies": {},
