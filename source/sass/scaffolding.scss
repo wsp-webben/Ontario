@@ -1,21 +1,20 @@
-/*@font-face {
+@font-face {
 	font-weight: normal;
-	font-family: "PT Sans";
+	font-family: "Raleway";
 	font-style: normal;
-	src: url("fonts/PTSans.woff2") format ("woff2"),
-			 url("fonts/PTSans.woff")  format ("woff");
+	src: url("fonts/Raleway-Regular.woff2") format ("woff2"),
+			 url("fonts/Raleway-regular.woff")  format ("woff");
 }
 
 @font-face {
-	font-weight: normal;
-	font-family: "PT Sans";
+	font-weight: bold;
+	font-family: "Raleway";
 	font-style: normal;
-	src: url("fonts/PTSansBold.woff2") format ("woff2"),
-			 url("fonts/PTSansBold.woff")  format ("woff");
-}*/
+	src: url("fonts/Raleway-Bold.woff2") format ("woff2"),
+			 url("fonts/Raleway-Bold.woff")  format ("woff");
+}
 
 body {
-	/*max-width: $desktop-width;*/
 	margin: 0;
 	padding: 0;
 
@@ -29,7 +28,9 @@ body {
 }
 
 .container {
+	max-width: $desktop-width;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .visually-hidden:not(:focus):not(:active) {

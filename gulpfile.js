@@ -34,9 +34,10 @@ gulp.task("style", function() {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    // causes problems with style.css
+    // .pipe(postcss([
+    //   autoprefixer()
+    // ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -55,9 +56,9 @@ gulp.task("style", function() {
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include() //inlining svg
-    ]))
+    // .pipe(posthtml([
+    //   include() //inlining svg
+    // ]))
     .pipe(gulp.dest("build"));
 });
 

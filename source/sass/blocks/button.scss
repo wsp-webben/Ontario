@@ -1,0 +1,24 @@
+.button {
+	padding: 7px 15px;
+
+	font-size: 13px;
+	line-height: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	color: #fff;
+	background-color: $light-green;
+
+	&:hover,
+	&:focus {
+		background-color: #262626;
+		outline: none;
+	};
+
+	&:active {
+		background-color: darken($light-green, 20%);
+	};
+}
+
