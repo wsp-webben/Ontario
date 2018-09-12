@@ -9,14 +9,29 @@
 .social__item {
 	width: 16px;
 	height: 16px;
-
-	background-color: #fff;
-
 	margin-right: 30px;
 
 	&:last-child {
 		margin-right: 0;
 	};
+
+
+	background-position: center;
+	background-repeat: no-repeat;	
+	&--facebook {
+		background-image: url("../img/facebook.png");
+	};
+	&--twitter {
+		background-image: url("../img/twitter.png");
+	};
+	&--googleplus {
+		background-image: url("../img/googleplus.png");
+	};
+	&--linkedin {
+		background-image: url("../img/linkedin.png");
+
+	};
+
 
 	&:hover,
 	&:focus {
