@@ -110,27 +110,27 @@
 				<p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+				<form class="subscribe__form form-email" method="post" action="https://echo.htmlacademy.ru">
+					<label class="visually-hidden" for="subscribe-email">Your email address</label>
+					<input class="form-email__input" type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail address .." required>
+					<button class="form-email__button button" type="submit">Subscribe</button>
+				</form>
 			</div>
-			<form class="subscribe__form form-email" method="post" action="https://echo.htmlacademy.ru">
-				<label class="visually-hidden" for="subscribe-email">Your email address</label>
-				<input class="form-email__input" type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail address .." required>
-				<button class="form-email__button button" type="submit">Subscribe</button>
-			</form>
 		</section>
 
-		<section class="page-main__testimonal testimonals">
-			<div class="testimonals container">
-				<h2 class="testimonals">Who we are</h2>
-				<div class="testimonals">
-					<p class="testimonals-us">Fully responsive, highly customizable Coming Soon template designed using Bootstrap 3 framework, yo! Spread the good news to your friends and family.</p>
-					<div class="testimonals reviews">
-						<div class="reviews__item">
-							<h3>Robert <span class="reviews__second-name">Decaprio</span></h3>
-							<p class="reviews__text">“ Honestly, these guys are the best people around to work with.They are super commited, delivering exceptional work always.”</p>
+		<section class="page-main__testimonals testimonals">
+			<div class="testimonals__container container">
+				<h2 class="testimonals__title">Who we are</h2>
+				<div class="testimonals__columns">
+					<p class="testimonals__us">Fully responsive, highly customizable Coming Soon template designed using Bootstrap 3 framework, yo! Spread the good news to your friends and family.</p>
+					<div class="testimonals__reviews reviews">
+						<div class="reviews__item">					
+							<h3 class="reviews__title">Robert <span class="reviews__second-name">Decaprio</span></h3>
+							<p class="reviews__text">“ Honestly, these guys are the best people around to work with. They are super commited, delivering exceptional work always.”</p>
 						</div>
 						<div class="reviews__controls">
-							<button class="review__controls-prev review-control"><span class="visually-hidden">Previous review</span></button>
-							<button class="review__controls-next review-control"><span class="visually-hidden">Next review</span></button>
+							<button class="reviews__controls-prev reviews__controls-button"><span class="visually-hidden">Previous review</span></button>
+							<button class="reviews__controls-next reviews__controls-button"><span class="visually-hidden">Next review</span></button>
 						</div>
 					</div>
 				</div>
@@ -138,32 +138,34 @@
 		</section>
 
 		<section class="page-main__contact contact">
-			<h2 class="contact__title">Contact us</h2>
-			<ul class="contact__list">
-				<li class="contact__item contact__item--flag">
-					<h3 class="contact__title">About us</h3>
-					<p class="contact__text">Temporibus autem quisbusdam et aut officiis debitis aut rerum nece sitatibus sape eveniet ut et voluptate rerum.</p>
-				</li>
-				<li class="contact__item contact__item--address">
-					<h3 class="contact__title">About us</h3>
-					<p class="contact__text">MobApp Center Adress <a href="tel:+1000999000">+1 (000)-999-0000</a> 321 Street Name, USA. New York support@domain.com</p>
-				</li>
-				<li class="contact__item contact__item--letter">
-					<h3 class="contact__title">Get in touch</h3>		
-					<form class="contact__form feedback" method="post" action="https://echo.htmlacademy.ru">
-						<div class="feedback__columns">
-							<label class="visually-hidden" for="feedback-name">Your name</label>
-							<input class="feedback__input" type="text" name="feedback-name" id="feedback-name" placeholder="Your name" required>
+			<div class="contact__container container">
+				<h2 class="contact__heading">Contact us</h2>
+				<ul class="contact__list">
+					<li class="contact__item contact__item--flag">
+						<h3 class="contact__title">About us</h3>
+						<p class="contact__text">Temporibus autem quisbusdam et aut officiis debitis aut rerum nece sitatibus sape eveniet ut et voluptate rerum.</p>
+					</li>
+					<li class="contact__item contact__item--address">
+						<h3 class="contact__title">About us</h3>
+						<p class="contact__text">MobApp Center Address <a href="tel:+1000999000">+1 (000)-999-0000</a></br > 321 Street Name, USA. New York support@domain.com</p>
+					</li>
+					<li class="contact__item contact__item--letter">
+						<h3 class="contact__title">Get in touch</h3>		
+						<form class="contact__form feedback" method="post" action="https://echo.htmlacademy.ru">
+							<div class="feedback__columns">
+								<label class="visually-hidden" for="feedback-name">Your name</label>
+								<input class="feedback__input" type="text" name="feedback-name" id="feedback-name" placeholder="Your name" required>
 
-							<label class="visually-hidden" for="feedback-email">Your email address</label>
-							<input class="feedback__input" type="email" name="feedback-email" id="feedback-email" placeholder="Your E-mail (Required)" required>
-						</div>
-						<label class="visually-hidden" for="feedback-message">Your message for us</label>
-						<input class="feedback__input" type="text" name="feedback-message" id="feedback-message" placeholder="Your message" required>
-						<button class="feedback__button button button--black" type="submit">Submit!</button>
-					</form>
-				</li>
-			</ul>
+								<label class="visually-hidden" for="feedback-email">Your email address</label>
+								<input class="feedback__input" type="email" name="feedback-email" id="feedback-email" placeholder="Your E-mail (Required)" required>
+							</div>
+							<label class="visually-hidden" for="feedback-message">Your message for us</label>
+							<input class="feedback__input" type="text" name="feedback-message" id="feedback-message" placeholder="Your message" required>
+							<button class="feedback__button button button--black" type="submit">Submit!</button>
+						</form>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
 
