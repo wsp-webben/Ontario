@@ -2,15 +2,11 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var server = require("browser-sync").create();
 
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
 var plumber = require("gulp-plumber");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");  
 // gulp 3 
 var run = require("run-sequence");
 var del = require("del");
@@ -34,10 +30,6 @@ gulp.task("style", function() {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
-    // causes problems with style.css
-    // .pipe(postcss([
-    //   autoprefixer()
-    // ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
@@ -45,20 +37,9 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-// gulp.task("sprite", function() {
-//   return gulp.src("sourcs/img/icon-*.svg")
-//     .pipe(svgStore({
-//       inlineSvg: true
-//     }))
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("build/img"));
-// });
-
 gulp.task("html", function() {
   return gulp.src("source/*.html")
-    // .pipe(posthtml([
-    //   include() //inlining svg
-    // ]))
+
     .pipe(gulp.dest("build"));
 });
 
@@ -67,8 +48,7 @@ gulp.task("images", function() {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
-      // imagemin.svgo()
-      ]))
+    ]))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -97,7 +77,6 @@ gulp.task("build", function(done) {
     "copy",
     "images",
     "style",
-    // "sprite",
     "html",
     done
   );
